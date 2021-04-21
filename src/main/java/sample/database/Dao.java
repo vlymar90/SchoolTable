@@ -10,6 +10,7 @@ public class Dao {
     private static Connection connection;
     private static Dao instance;
 
+
     private Dao(){}
 
     public static Dao getInstance() {
@@ -29,7 +30,7 @@ public class Dao {
 
     public void add(int id_user, int avg_user, int total) {
         try {
-            PreparedStatement statement = connection.prepareStatement("Insert into data_user value (1, ?, ?, ?);");
+            PreparedStatement statement = connection.prepareStatement("Insert into student value (?, ?, ?);");
             statement.setInt(1, id_user);
             statement.setInt(2, avg_user);
             statement.setInt(3, total);

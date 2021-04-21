@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.layout.Pane?>
@@ -14,7 +15,10 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Pane layoutX="558.0" layoutY="14.0" prefHeight="559.0" prefWidth="231.0" />
+      <Pane layoutX="558.0" layoutY="14.0" prefHeight="559.0" prefWidth="231.0">
+         <children>
+            <TextArea editable="false" fx:id="textInfo" layoutY="-4.0" prefHeight="569.0" prefWidth="231.0" />
+         </children></Pane>
       <Label accessibleRole="BUTTON" alignment="TOP_LEFT" graphicTextGap="10.0" layoutX="14.0" layoutY="14.0" mouseTransparent="true" prefHeight="20.0" prefWidth="90.0" text="id Студента:" textFill="#2c2a2a" wrapText="true">
          <padding>
             <Insets bottom="10.0" />
@@ -71,22 +75,22 @@
             <ColorAdjust brightness="0.3" contrast="0.3" hue="0.3" saturation="0.3" />
          </effect>
       </Label>
-      <TextField layoutX="111.0" layoutY="11.0" prefHeight="35.0" prefWidth="163.0">
+      <TextField fx:id="idStudent" layoutX="111.0" layoutY="11.0" prefHeight="35.0" prefWidth="163.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="111.0" layoutY="51.0" prefHeight="35.0" prefWidth="163.0">
+      <TextField fx:id="name" layoutX="111.0" layoutY="51.0" prefHeight="35.0" prefWidth="163.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="111.0" layoutY="96.0" prefHeight="35.0" prefWidth="163.0">
+      <TextField fx:id="lastName" layoutX="111.0" layoutY="96.0" prefHeight="35.0" prefWidth="163.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="111.0" layoutY="140.0" prefHeight="35.0" prefWidth="163.0">
+      <TextField fx:id="group" layoutX="111.0" layoutY="140.0" prefHeight="35.0" prefWidth="163.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
@@ -138,17 +142,17 @@
             <ColorAdjust brightness="0.3" contrast="0.3" hue="0.3" saturation="0.3" />
          </effect>
       </Label>
-      <TextField layoutX="111.0" layoutY="222.0" prefHeight="35.0" prefWidth="163.0">
+      <TextField fx:id="total" layoutX="111.0" layoutY="222.0" prefHeight="35.0" prefWidth="163.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="111.0" layoutY="265.0" prefHeight="35.0" prefWidth="163.0">
+      <TextField fx:id="avg_user" layoutX="111.0" layoutY="265.0" prefHeight="35.0" prefWidth="163.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="111.0" layoutY="309.0" prefHeight="35.0" prefWidth="163.0">
+      <TextField fx:id="rank" layoutX="111.0" layoutY="309.0" prefHeight="35.0" prefWidth="163.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
@@ -306,65 +310,65 @@
             <Insets bottom="10.0" />
          </opaqueInsets>
       </Label>
-      <TextField layoutX="393.0" layoutY="11.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="russ" layoutX="393.0" layoutY="11.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="393.0" layoutY="46.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="math" layoutX="393.0" layoutY="46.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="393.0" layoutY="81.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="history" layoutX="393.0" layoutY="81.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="393.0" layoutY="116.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="literature" layoutX="393.0" layoutY="116.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="393.0" layoutY="158.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="chemistry" layoutX="393.0" layoutY="158.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="393.0" layoutY="192.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="language" layoutX="393.0" layoutY="192.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="393.0" layoutY="235.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="biology" layoutX="393.0" layoutY="235.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="393.0" layoutY="280.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="ecology" layoutX="393.0" layoutY="280.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <TextField layoutX="393.0" layoutY="319.0" prefHeight="30.0" prefWidth="130.0">
+      <TextField fx:id="geography" layoutX="393.0" layoutY="319.0" prefHeight="30.0" prefWidth="130.0">
          <padding>
             <Insets bottom="10.0" />
          </padding>
       </TextField>
-      <Button  onAction="#action" alignment="CENTER" layoutX="16.0" layoutY="592.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Добавить" textAlignment="CENTER" wrapText="true" />
-      <Button alignment="CENTER" layoutX="173.0" layoutY="592.0" mnemonicParsing="false" prefWidth="150.0" text="Информация" textAlignment="CENTER" wrapText="true" />
-      <Button alignment="CENTER" layoutX="327.0" layoutY="592.0" mnemonicParsing="false" prefWidth="150.0" text="Удалить" textAlignment="CENTER" wrapText="true" />
-      <Button alignment="CENTER" layoutX="483.0" layoutY="592.0" mnemonicParsing="false" prefWidth="150.0" text="Сбросить" textAlignment="CENTER" wrapText="true" />
-      <Button alignment="CENTER" layoutX="639.0" layoutY="592.0" mnemonicParsing="false" prefWidth="150.0" text="Выход" textAlignment="CENTER" wrapText="true" />
+      <Button alignment="CENTER" layoutX="173.0" layoutY="592.0" mnemonicParsing="false" onAction="#printInfo" prefWidth="150.0" text="Информация" textAlignment="CENTER" wrapText="true" />
+      <Button alignment="CENTER" layoutX="327.0" layoutY="592.0" mnemonicParsing="false" onAction="#removeUser" prefWidth="150.0" text="Удалить" textAlignment="CENTER" wrapText="true" />
+      <Button alignment="CENTER" layoutX="483.0" layoutY="592.0" mnemonicParsing="false" onAction="#reset" prefWidth="150.0" text="Сбросить" textAlignment="CENTER" wrapText="true" />
+      <Button alignment="CENTER" layoutX="639.0" layoutY="592.0" mnemonicParsing="false" onAction="#exit" prefWidth="150.0" text="Выход" textAlignment="CENTER" wrapText="true" />
       <TableView layoutX="2.0" layoutY="358.0" prefHeight="214.0" prefWidth="528.0">
         <columns>
-          <TableColumn prefWidth="52.8000168800354" text="id" />
-            <TableColumn prefWidth="88.79996490478516" text="Фамилия" />
-          <TableColumn prefWidth="97.5999755859375" text="Группа" />
-            <TableColumn prefWidth="98.4000244140625" text="Средний балл" />
-            <TableColumn prefWidth="87.20001220703125" text="Всего" />
-            <TableColumn prefWidth="100.79995727539062" text="Позиция" />
+          <TableColumn fx:id="id_table" prefWidth="52.8000168800354" text="id" />
+            <TableColumn fx:id="lastname_table" prefWidth="88.79996490478516" text="Фамилия" />
+          <TableColumn fx:id="group_table" prefWidth="97.5999755859375" text="Группа" />
+            <TableColumn fx:id="avg_table" prefWidth="98.4000244140625" text="Средний балл" />
+            <TableColumn fx:id="total_table" prefWidth="87.20001220703125" text="Всего" />
+            <TableColumn fx:id="rank_table" prefWidth="100.79995727539062" text="Позиция" />
         </columns>
       </TableView>
+      <Button alignment="CENTER" layoutX="16.0" layoutY="592.0" mnemonicParsing="false" onAction="#addUser" prefWidth="150.0" text="Добавить" textAlignment="CENTER" wrapText="true" />
    </children>
 </Pane>
